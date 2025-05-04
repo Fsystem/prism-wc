@@ -1,0 +1,7 @@
+{
+  "name": "@wcd/fsystem.prism-ma9xfn0g",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve 2cDHeoPFDeEfKXiLvIJU --open"
+  }
+}

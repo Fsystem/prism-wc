@@ -1,0 +1,43 @@
+<template>
+	<button @click="dec">
+		-
+	</button>
+	<span>{count}</span>
+	<button @click="inc">
+		+
+	</button>
+</template>
+
+<script>
+	@Default({count: 0})
+    class MyCounter extends Component<{count: number}> {
+        inc() {
+            this.data.count++;
+        }
+
+        dec() {
+            this.data.count--;
+        }
+    }
+</script>
+
+<style>
+	* {
+		font-size: 200%;
+	}
+
+	span {
+		width: 4rem;
+		display: inline-block;
+		text-align: center;
+	}
+
+	button {
+		width: 4rem;
+		height: 4rem;
+		border: none;
+		border-radius: 10px;
+		background-color: seagreen;
+		color: white;
+	}
+</style>
